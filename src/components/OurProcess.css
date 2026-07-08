@@ -1,0 +1,175 @@
+/* Wrapper so "Our Process" heading is never hidden by section or previous block */
+.our-process-wrapper {
+  padding-top: 3.5rem;
+  padding-bottom: 0;
+  background: #fff;
+}
+
+.our-process-heading-block {
+  text-align: center;
+  margin-bottom: 24px;
+  padding: 0 1rem;
+}
+
+.our-process-section {
+  background: #fafbfc;
+  border-radius: 24px;
+  padding: 48px 0 48px 0;
+  margin: 0 auto 48px;
+  max-width: 90vw;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+
+.our-process-title {
+  font-family: KuraleRegular;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #000000;
+  margin: 0 0 12px 0;
+  letter-spacing: 0.5px;
+  scroll-margin-top: 2rem; /* avoid being hidden under sticky headers when scrolling */
+}
+
+.our-process-subtitle {
+  font-size: 1.25rem;
+  color: #c62726;
+  margin: 0 0 40px 0;
+  font-family: EireneSansRegular;
+}
+
+.our-process-steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.our-process-step {
+  flex: 1 1 0;
+  min-width: 240px;
+  max-width: 340px;
+  background: transparent;
+  position: relative;
+  padding: 0 16px 0 16px;
+}
+
+.our-process-circle {
+  width: 80px;
+  height: 80px;
+  background: #e53935;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 2px 8px rgba(229, 57, 53, 0.08);
+}
+
+.our-process-step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f8f8f9;
+  margin-bottom: 12px;
+}
+
+.our-process-step-desc {
+  color: #efefef;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.our-process-arrow {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  z-index: 1;
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .our-process-step {
+    padding-bottom: 0;
+  }
+
+  .our-process-arrow {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .our-process-section {
+    padding: 40px 0;
+    margin: 24px auto;
+    max-width: 90vw;
+  }
+
+  .our-process-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 0 16px;
+  }
+
+  .our-process-step {
+    width: 100%;
+    max-width: 400px;
+    /* Optimal reading width */
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .our-process-circle {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    border: none;
+    box-shadow: 0 4px 15px rgba(229, 57, 53, 0.2);
+  }
+
+  .our-process-step-title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    color: #fff;
+    /* Ensure contrast against video overlay */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .our-process-step-desc {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #f0f0f0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .our-process-arrow {
+    display: none;
+  }
+
+  .our-process-title {
+    font-size: 2.2rem;
+  }
+
+  .our-process-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
+  .our-process-wrapper {
+    padding-top: 2rem;
+  }
+}

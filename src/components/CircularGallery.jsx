@@ -57,10 +57,8 @@ const DEMO_ITEMS = [
 
 export default function CircularGallery() {
   return (
-    <main className="min-h-screen overflow-x-hidden w-full bg-white flex flex-col items-center justify-center">
-      
-
-      <FocusRail items={DEMO_ITEMS} loop />
+    <main className="h-full w-full overflow-hidden bg-white flex flex-col items-center justify-center">
+      <FocusRail items={DEMO_ITEMS} loop className="h-full" />
     </main>
   );
 }

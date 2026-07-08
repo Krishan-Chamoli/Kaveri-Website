@@ -48,7 +48,7 @@ function Home() {
             </h2>
           </motion.div>
         </div>
-        <div className="relative w-full h-[350px] md:h-[600px]">
+        <div className="relative w-full h-[600px] overflow-hidden">
           <CircularGallery
             bend={3}
             textColor="#dc2626"
@@ -59,7 +59,7 @@ function Home() {
       </div>
       <OurProcess />
       <RevealImg />
-      <GlobalNetwork />
+      {/* <GlobalNetwork /> */}
       {/* <SupportSection /> */}
       {/* <Cards /> */}
     </div>
